@@ -1,0 +1,110 @@
+
+
+body {
+    background-color: rgb(56,62,78);
+    /* color: #fff; */
+    /* text-align: center; */
+}
+
+html, body {
+    height: 100%;
+}
+button {
+    display: inline-block;
+    border: none;
+    padding: 1rem 2rem;
+    margin: 0;
+    text-decoration: none;
+    background: #0069ed;
+    color: #ffffff;
+    font-family: sans-serif;
+    font-size: 1rem;
+    cursor: pointer;
+    text-align: center;
+    transition: background 250ms ease-in-out, 
+                transform 150ms ease;
+    -webkit-appearance: none;
+    -moz-appearance: none;
+}
+
+button:hover,
+button:focus {
+    background: #0053ba;
+}
+
+button:focus {
+    outline: 1px solid #fff;
+    outline-offset: -4px;
+}
+
+button:active {
+    transform: scale(0.99);
+}
+
+.btn {
+    padding: .5em 2em;
+}
+
+.main-container {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    height: 100%;
+    text-align: center;
+    padding: 3em 0;
+}
+
+.main-container h1 {
+    margin:  .5em 0;
+}
+
+.main-container p {
+    margin: 0;
+    color: grey;
+}
+
+#inner-container {
+    background-color: #fff;
+    padding: 1em 8em;
+}
+
+#inner-container div {
+    margin: 1em 0;
+}
+
+#selection-form {
+    margin-top: 1em;
+}
+
+.form-group {
+    display: flex;
+    flex-direction: column;
+    margin: 1.5em 0;
+}
+
+.form-group label {
+    text-align: left;
+    margin-bottom: .5em;
+    /* display: block; */
+}
+
+.form-group select {
+    padding: .5em ;
+}
+
+#start-button {
+    margin-top: 1em;
+}
+
+
+@media screen and (max-width: 600px){
+    .main-container {
+        /* display: block; */
+    }
+
+    #inner-container {
+        padding: 1em;
+        width: 90%;
+    }
+}
